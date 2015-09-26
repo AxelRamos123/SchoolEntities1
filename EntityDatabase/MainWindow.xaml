@@ -14,22 +14,22 @@
             <TabItem Header="OfficeAssignaments" HorizontalAlignment="Right" Width="120">
                 <officeassignments:OfficeAssignmentsList x:Name="OfficeAssignmentsUserControl"/>
             </TabItem>
-            <TabItem Header="Persons" Margin="427,0,-431,-3">
+            <TabItem Header="Persons" Margin="407,0,-411,-3">
                 <persons:PersonsList x:Name="PersonsUserControl" Margin="26,0,99,-11"/>
             </TabItem>
-            <TabItem Header="Courses" Margin="-57,0,53,0" Height="22" VerticalAlignment="Top">
+            <TabItem Header="Courses" Margin="-56,0,52,0" Height="22" VerticalAlignment="Top">
                 <courses:CoursesList x:Name="CoursesUserControl" Margin="26,0,99,-11"/>
             </TabItem>
-            <TabItem Header="Departments" Margin="41,0,-45,-2">
+            <TabItem Header="Departments" Margin="34,0,-38,0" Height="24" VerticalAlignment="Top">
                 <departments:DepartmentsList x:Name="DepartmentsUserControl" Margin="26,0,99,-11"/>
             </TabItem>
-            <TabItem Header="OnlineCourses" Margin="45,0,-45,-2" HorizontalAlignment="Left" Width="95">
+            <TabItem Header="OnlineCourses" Margin="37,0,-37,-2" HorizontalAlignment="Left" Width="95">
                 <onlinecourses:OnlineCoursesList x:Name="OnlineCoursesUserControl" Margin="26,0,99,-11"/>
             </TabItem>
             <TabItem Header="OnsiteCourses" Margin="-232,0,228,-2">
                 <onsitecourses:OnsiteCoursesList x:Name="OnsiteCoursesUserControl" Margin="26,0,99,-11"/>
             </TabItem>
-            <TabItem Header="StudentGrades" Margin="-48,0,0,-2" HorizontalAlignment="Left" Width="96">
+            <TabItem Header="StudentGrades" Margin="-54,0,0,-2" HorizontalAlignment="Left" Width="90">
                 <studentgrades:StudentGradesList x:Name="StudentGradesUserControl" Margin="26,0,99,-11"/>
             </TabItem>
         </TabControl>
