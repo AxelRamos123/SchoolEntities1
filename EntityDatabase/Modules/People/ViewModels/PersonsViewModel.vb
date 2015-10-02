@@ -9,7 +9,7 @@ Namespace Modules.People.ViewModels
     Public Class PeopleViewModel
         Inherits ViewModelBase
 
-        Public Shadows _person As Add_EditPerson
+        Public Shadows _person As CreatedPerson
         Private _people As ObservableCollection(Of Person)
         Private dataAccess As IPeopleService
         Private _delete As ICommand
@@ -88,7 +88,7 @@ Namespace Modules.People.ViewModels
         End Property
         Sub AddPersonToDB()
             Using school As New SchoolEntities
-                _person = New Add_EditPerson
+                _person = New CreatedPerson
                 _person.ShowDialog()
                 Refresh()
             End Using
