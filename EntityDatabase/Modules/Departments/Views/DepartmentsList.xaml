@@ -15,5 +15,8 @@
                 <DataGridTextColumn x:Name="BudgetColumn" Binding="{Binding Path=Budget}" Header="Budget" Width="100"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="226,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="364,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Agregar " HorizontalAlignment="Left" Margin="96,281,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </UserControl>

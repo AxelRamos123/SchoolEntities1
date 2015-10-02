@@ -15,5 +15,8 @@
                
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="91,284,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="227,284,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="367,284,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </UserControl>

@@ -14,6 +14,9 @@
                 <DataGridTextColumn x:Name="URLColumn" Binding="{Binding Path=URL}" Header="URL" Width="250"/>
             </DataGrid.Columns>
         </DataGrid>
+        <Button Content="Agregar" HorizontalAlignment="Left" Margin="111,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Modificar" HorizontalAlignment="Left" Margin="231,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="359,281,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </UserControl>
 
