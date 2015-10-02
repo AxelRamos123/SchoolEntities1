@@ -669,6 +669,3 @@ VALUES (1050, 30, 3.5);
 INSERT INTO dbo.StudentGrade (CourseID, StudentID, Grade)
 VALUES (1061, 30, 4);
 GO
-
-SELECT *FROM OnlineCourse
-GO
