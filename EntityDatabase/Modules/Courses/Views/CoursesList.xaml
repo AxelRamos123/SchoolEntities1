@@ -8,16 +8,16 @@
     <Grid Name="MainGrid">
         <DataGrid HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top"
                   ItemsSource="{Binding Courses}" Height="284" Width="512"
-                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected">
+                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected" SelectedItem="{Binding Selected}">
             <DataGrid.Columns>
-                <DataGridTextColumn x:Name="CourseIdColumn" Binding="{Binding Path=Department.Name}" Header="CourseDepartment" Width="150"/>
-                <DataGridTextColumn x:Name="TitleColumn" Binding="{Binding Path=Title}" Header="Title" Width="100"/>
-                <DataGridTextColumn x:Name="CreditsColumn" Binding="{Binding Path=Credits}" Header="Credits" Width="100"/>
-
+                <DataGridTextColumn x:Name="CourseColumn" Binding="{Binding Path=CourseID}" Header="Course" Width="Auto"/>
+                <DataGridTextColumn x:Name="TitleColumn" Binding="{Binding Path=Title}" Header="Title" Width="Auto"/>
+                <DataGridTextColumn x:Name="CreditsColumn" Binding="{Binding Path=Credits}" Header="Credits" Width="Auto"/>
+                <DataGridTextColumn x:Name="DepartmentIDColumn" Binding="{Binding Path=Department.Name}" Header="Department" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Agregar" HorizontalAlignment="Left" Margin="82,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Agregar" Command="{Binding AddCommand}" HorizontalAlignment="Left" Margin="82,281,0,0" VerticalAlignment="Top" Width="75"/>
         <Button Content="Modificar" HorizontalAlignment="Left" Margin="221,281,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="351,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Eliminar" Command="{Binding DeleteCommand}"  HorizontalAlignment="Left" Margin="351,281,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </UserControl>

@@ -149,6 +149,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Modules\Courses\Views\CreatedCourse.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Modules\Departments\Views\DepartmentsList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -199,8 +203,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\Courses\ViewModels\CoursesViewModel.vb" />
+    <Compile Include="Modules\Courses\ViewModels\CreatedCourseViewModel.vb" />
     <Compile Include="Modules\Courses\Views\CoursesList.xaml.vb">
       <DependentUpon>CoursesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\Courses\Views\CreatedCourse.xaml.vb">
+      <DependentUpon>CreatedCourse.xaml</DependentUpon>
     </Compile>
     <Compile Include="Modules\Departments\ViewModels\DepartmentsViewModel.vb" />
     <Compile Include="Modules\Departments\Views\DepartmentsList.xaml.vb">

@@ -7,7 +7,7 @@
     <Grid Name="MainGrid">
         <DataGrid HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top"
                   ItemsSource="{Binding People}" Height="284" Width="512"
-                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected">
+                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected" SelectedItem="{Binding Selected}">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="PersonIdColumn" Binding="{Binding Path=PersonID}" Header="ID" Width="100"/>
                 <DataGridTextColumn x:Name="LastNameColumn" Binding="{Binding Path=LastName}" Header="LastName" Width="100"/>
