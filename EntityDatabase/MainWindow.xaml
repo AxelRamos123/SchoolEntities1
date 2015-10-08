@@ -11,13 +11,13 @@
     Title="MainWindow" Height="400" Width="700" Background="{DynamicResource {x:Static SystemColors.HotTrackBrushKey}}">
     <Grid>
         <TabControl HorizontalAlignment="Left" Height="369" VerticalAlignment="Top" Width="692" Background="{DynamicResource {x:Static SystemColors.GradientActiveCaptionBrushKey}}">
-            <TabItem Header="OfficeAssignaments" HorizontalAlignment="Right" Width="120">
+            <TabItem Header="OfficeAssignaments" HorizontalAlignment="Right" Width="120" Margin="0,0,-52,-2">
                 <officeassignments:OfficeAssignmentsList x:Name="OfficeAssignmentsUserControl"/>
             </TabItem>
             <TabItem Header="Persons" Margin="407,0,-411,-3">
                 <people:PeopleList x:Name="PeopleUserControl" Margin="26,0,99,-11"/>
             </TabItem>
-            <TabItem Header="Courses" Margin="-56,0,52,0" Height="22" VerticalAlignment="Top">
+            <TabItem Header="Courses" Margin="-173,0,169,0" Height="22" VerticalAlignment="Top">
                 <courses:CoursesList x:Name="CoursesUserControl" Margin="26,0,99,-11"/>
             </TabItem>
             <TabItem Header="Departments" Margin="34,0,-38,0" Height="24" VerticalAlignment="Top">
