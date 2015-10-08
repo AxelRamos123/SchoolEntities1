@@ -8,7 +8,7 @@
     <Grid Name="MainGrid">
         <DataGrid HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top"
                   ItemsSource="{Binding Departments}" Height="284" Width="512"
-                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected">
+                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected" SelectedItem="{Binding Selected}">
             <DataGrid.Columns>
                 <DataGridTextColumn x:Name="DepartmentIdColumn" Binding="{Binding Path=DepartmentID}" Header="ID" Width="100"/>
                 <DataGridTextColumn x:Name="NameColumn" Binding="{Binding Path=Name}" Header="Name" Width="100"/>
@@ -16,7 +16,7 @@
             </DataGrid.Columns>
         </DataGrid>
         <Button Content="Modificar" HorizontalAlignment="Left" Margin="226,281,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="364,281,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Agregar " HorizontalAlignment="Left" Margin="96,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Eliminar" Command="{Binding DeleteCommand}"  HorizontalAlignment="Left" Margin="364,281,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Agregar" Command="{Binding AddCommand}" HorizontalAlignment="Left" Margin="96,281,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </UserControl>
