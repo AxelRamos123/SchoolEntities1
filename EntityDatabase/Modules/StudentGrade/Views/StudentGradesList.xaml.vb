@@ -1,5 +1,4 @@
-﻿Imports Modules.StudentGrades.ViewModels
-Namespace Modules.StudentGrades.Views
+﻿Namespace Modules.StudentGrades.Views
     Public Class StudentGradesList
 
     End Class

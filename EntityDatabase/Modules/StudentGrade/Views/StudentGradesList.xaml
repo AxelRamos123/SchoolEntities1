@@ -8,15 +8,16 @@
     <Grid Name="MainGrid">
         <DataGrid HorizontalAlignment="Left" Margin="25,30,0,0" VerticalAlignment="Top"
                   ItemsSource="{Binding StudentGrades}" Height="284" Width="512"
-                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected">
+                  AutoGenerateColumns="false" RowDetailsVisibilityMode="VisibleWhenSelected"  SelectedItem="{Binding Selected}">
             <DataGrid.Columns>
-                <DataGridTextColumn x:Name="CourseIdColumn" Binding="{Binding Path=Course.Title}" Header="StudentGradeCourse" Width="150"/>
-                <DataGridTextColumn x:Name="StudentIdColumn" Binding="{Binding Path=Person.LastName}" Header="StudentGradePerson" Width="150"/>
-                <DataGridTextColumn x:Name="GradeColumn" Binding="{Binding Path=Grade}" Header="Grade" Width="100"/>
+                <DataGridTextColumn x:Name="EnrollmentID" Binding="{Binding Path=EnrollmentID}" Header="EnrollmentID" Width="Auto"/>
+                <DataGridTextColumn x:Name="CourseID" Binding="{Binding Path=Course.Title}" Header="Course" Width="Auto"/>
+                <DataGridTextColumn x:Name="StudentID" Binding="{Binding Path=Person.FirstName}" Header="Student" Width="Auto"/>
+                <DataGridTextColumn x:Name="Grade" Binding="{Binding Path=Grade}" Header="Grade" Width="Auto"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button Content="Eliminar" HorizontalAlignment="Left" Margin="433,280,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Modificar" HorizontalAlignment="Left" Margin="433,229,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button Content="Agregar" HorizontalAlignment="Left" Margin="433,173,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Eliminar" Command="{Binding DeleteCommand}"  HorizontalAlignment="Left" Margin="433,280,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Modificar"  HorizontalAlignment="Left" Margin="433,229,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button Content="Agregar" Command="{Binding AddCommand}" HorizontalAlignment="Left" Margin="433,173,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </UserControl>

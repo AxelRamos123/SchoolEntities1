@@ -181,6 +181,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Modules\StudentGrade\Views\CreatedStudentGrade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Modules\StudentGrade\Views\StudentGradesList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -242,7 +246,11 @@
     <Compile Include="Modules\People\Views\PersonsList.xaml.vb">
       <DependentUpon>PersonsList.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Modules\StudentGrade\ViewModels\CreatedStudentGradeViewModel.vb" />
     <Compile Include="Modules\StudentGrade\ViewModels\StudentGradesViewModel.vb" />
+    <Compile Include="Modules\StudentGrade\Views\CreatedStudentGrade.xaml.vb">
+      <DependentUpon>CreatedStudentGrade.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Modules\StudentGrade\Views\StudentGradesList.xaml.vb">
       <DependentUpon>StudentGradesList.xaml</DependentUpon>
     </Compile>
